@@ -191,10 +191,12 @@ class Abstract4PDF {
         // Computed scale by DPI, custom scale arg and element attribute
         scale *= this.DPI() * (parseFloat(selector.dataset.pdf_scale) || 1)
 
-        return await html2canvas(selector, {
-            scale: scale,
-            logging: logging,
-            useCORS: true
+        return await import(/* webpackChunkName: "html2canvas" */ "html2canvas").then(html2canvas => {
+            return html2canvas(selector, {
+                scale: scale,
+                logging: logging,
+                useCORS: true
+            });
         }).then(function (_canvas) {
             let ctx = _canvas.getContext('2d');
             

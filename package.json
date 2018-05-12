@@ -1,11 +1,17 @@
 {
   "name": "abstract4pdf",
+  "title": "Abstract4PDF",
   "version": "0.1.0",
   "main": "webpack.config.js",
   "scripts": {
-    "start": "webpack-cli"
+    "build": "webpack-cli"
   },
-  "author": "Gitai <i@gitai.me>",
+  "homepage": "https://github.com/GitaiQAQ/Abstract4PDF",
+  "author": {
+    "name": "Gitai",
+    "url": "https://gitai.me",
+    "email": "i@gitai.me"
+  },
   "license": "MIT",
   "browserslist": [
     "> 1%",
@@ -21,7 +27,7 @@
     "@types/jquery": "^3.3.1",
     "@types/pdfmake": "^0.1.1",
     "core-js": "^2.5.5",
-    "html2canvas": "^1.0.0-alpha.12",
+    "html2canvas": "http://git.51juda.com/wenxiaow/html2canvas.git",
     "pdfmake": "^0.1.36",
     "save-svg-as-png": "^1.3.2",
     "types-save-svg-as-png": "^1.0.1"
