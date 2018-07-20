@@ -40,7 +40,7 @@ module.exports = [
       filename: 'abstract4pdf.js',
       chunkFilename: "[name].js",
       path: path.resolve(__dirname, './dist'),
-      publicPath: './course_progress_files/',
+      publicPath: '/static/abstract4pdf/0.1.0/',
       library: 'abstract4pdf',
       libraryTarget: 'umd'
     }, 
@@ -69,7 +69,7 @@ module.exports = [
       filename: 'abstract4pdf.min.js',
       chunkFilename: "[name].min.js",
       path: path.resolve(__dirname, './dist'),
-      publicPath: './course_progress_files/',
+      publicPath: '/static/abstract4pdf/0.1.0/',
       library: 'abstract4pdf',
       libraryTarget: 'umd'
     }, 
